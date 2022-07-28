@@ -4,17 +4,13 @@ import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import org.springdoc.core.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
-
-@Controller
+@Configuration
 public class SwaggerConfig implements WebMvcConfigurer {
-
-
 
     @Bean
     public OpenAPI springShopOpenAPI() {
